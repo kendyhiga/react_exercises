@@ -77,11 +77,11 @@ import ReactDOM from 'react-dom'
 // , elemento)
 
 // Ja com uma div, não quebra:
-// import PrimeiroComponente from './componentes/PrimeiroComponente'
-// const elemento = document.getElementById('root')
-// ReactDOM.render(
-//   <div>
-//     <PrimeiroComponente />
-//     <PrimeiroComponente />
-//   </div>
-// , elemento)
+import PrimeiroComponente from './componentes/PrimeiroComponente'
+const elemento = document.getElementById('root')
+ReactDOM.render(
+  <div>
+    <PrimeiroComponente />
+    <PrimeiroComponente />
+  </div>
+, elemento)
