@@ -77,11 +77,28 @@ import ReactDOM from 'react-dom'
 // , elemento)
 
 // Ja com uma div, não quebra:
-import PrimeiroComponente from './componentes/PrimeiroComponente'
+// import PrimeiroComponente from './componentes/PrimeiroComponente'
+// const elemento = document.getElementById('root')
+// ReactDOM.render(
+//   <div>
+//     <PrimeiroComponente valor='Bom dia!' aBcD={1234} />
+//   </div>
+// , elemento)
+
+// Usando dois componentes, vc pode renomear um componente usando 'as'
+import { CompA, CompB as B} from './componentes/DoisComponentes'
 const elemento = document.getElementById('root')
 ReactDOM.render(
-  <div>
-    <PrimeiroComponente />
-    <PrimeiroComponente />
-  </div>
+    <div>
+        <CompA valor='Olá eu sou A!' />
+        <B valor='B na área!'/>
+    </div>
 , elemento)
+
+// import MultiElementos from './componentes/MultiElementos'
+// const elemento = document.getElementById('root')
+// ReactDOM.render(
+//     <div>
+//         <MultiElementos />
+//     </div>
+// , elemento)

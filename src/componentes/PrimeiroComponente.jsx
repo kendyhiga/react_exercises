@@ -22,7 +22,23 @@ import React from 'react'
 // export default () => <h1>Primeiro Componente Arrow!</h1>
 
 // Voce tambem pode retornar código HTML:
-export default () =>
+// export default () =>
+//   <div>
+//     <h1>Primeiro Componente Arrow!</h1>
+//   </div>
+
+// Vc pode passar parametros(props) para a funçao:
+// export default (props) =>
+//   <div>
+//     <h1>{props.valor}</h1>
+//     <h2>{props.aBcD}</h2>
+//   </div>
+
+// Vc pode colocar qualquer expressão JS entre chaves e ela sera interpretada:
+export default (props) =>
   <div>
-    <h1>Primeiro Componente Arrow!</h1>
+    <h1>{props.valor}</h1>
+    <h2>{1 + 1}</h2>
+    <p>{ true ? 'Sim' : 'Não' }</p>
+    <p>{ Math.random() }</p>
   </div>
