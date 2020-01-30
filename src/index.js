@@ -86,14 +86,14 @@ import ReactDOM from 'react-dom'
 // , elemento)
 
 // Usando dois componentes, vc pode renomear um componente usando 'as'
-import { CompA, CompB as B} from './componentes/DoisComponentes'
-const elemento = document.getElementById('root')
-ReactDOM.render(
-    <div>
-        <CompA valor='Olá eu sou A!' />
-        <B valor='B na área!'/>
-    </div>
-, elemento)
+// import { CompA, CompB as B} from './componentes/DoisComponentes'
+// const elemento = document.getElementById('root')
+// ReactDOM.render(
+//     <div>
+//         <CompA valor='Olá eu sou A!' />
+//         <B valor='B na área!'/>
+//     </div>
+// , elemento)
 
 // import MultiElementos from './componentes/MultiElementos'
 // const elemento = document.getElementById('root')
@@ -102,3 +102,12 @@ ReactDOM.render(
 //         <MultiElementos />
 //     </div>
 // , elemento)
+
+import FamiliaSilva from './componentes/FamiliaSilva'
+
+const elemento = document.getElementById('root')
+ReactDOM.render(
+    <div>
+        <FamiliaSilva />
+    </div>
+, elemento)
