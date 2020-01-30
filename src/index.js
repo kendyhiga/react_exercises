@@ -155,10 +155,29 @@ import ReactDOM from 'react-dom'
 //     </div>
 // , elemento)
 
-import Pai from './componentes/Pai'
+// Passando callback para classe pai
+// import Pai from './componentes/Pai'
+// const elemento = document.getElementById('root')
+// ReactDOM.render(
+//     <div>
+//         <Pai />
+//     </div>
+// , elemento)
+
+// Usando componente baseado em classe:
+// import ComponenteClasee from './componentes/ComponenteClasse'
+// const elemento = document.getElementById('root')
+// ReactDOM.render(
+//     <div>
+//         <ComponenteClasee valor='Sou um componente de classe' />
+//     </div>
+// , elemento)
+
+
+import Contador from './componentes/Contador'
 const elemento = document.getElementById('root')
 ReactDOM.render(
     <div>
-        <Pai />
+        <Contador numeroInicial={100} />
     </div>
 , elemento)

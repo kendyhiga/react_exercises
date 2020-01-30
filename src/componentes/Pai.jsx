@@ -10,3 +10,19 @@ export default props => {
         </div>
     )
 }
+
+// Sem usar alert, porem o valor nao eh alterado, 
+// export default props => {
+//     let lugarInformado = 'Nenhum'
+//     const notificarSaidaDoFilho =
+//         lugar => {
+//             lugarInformado = lugar
+//             console.log(lugarInformado)
+//         }
+//     return (
+//         <div>
+//             {lugarInformado}
+//             <Filho notificarSaida={notificarSaidaDoFilho} />
+//         </div>
+//     )
+// }
