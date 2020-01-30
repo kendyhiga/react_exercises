@@ -103,11 +103,45 @@ import ReactDOM from 'react-dom'
 //     </div>
 // , elemento)
 
-import FamiliaSilva from './componentes/FamiliaSilva'
+// Uso de um elemento dentro de outro elemento
+// import FamiliaSilva from './componentes/FamiliaSilva'
+// const elemento = document.getElementById('root')
+// ReactDOM.render(
+//     <div>
+//         <FamiliaSilva />
+//     </div>
+// , elemento)
 
+// Através do metodo {props.children} em familia, o props eh repassado para o componente membro
+// import Familia from './componentes/Familia'
+// import Membro from './componentes/Membro'
+// const elemento = document.getElementById('root')
+// ReactDOM.render(
+//     <div>
+//         <Familia>
+//             <Membro nome='Andre' sobrenome='Pereira' />
+//             <Membro nome='Mariana' sobrenome='Pereira' />
+//         </Familia>
+//         <Familia>
+//             <Membro nome='Bia' sobrenome='Arruda' />
+//             <Membro nome='Gustavo' sobrenome='Arruda' />
+//         </Familia>
+//     </div>
+// , elemento)
+
+import FamiliaSilva from './componentes/FamiliaSilva'
+import Familia from './componentes/Familia'
+import Membro from './componentes/Membro'
 const elemento = document.getElementById('root')
 ReactDOM.render(
     <div>
-        <FamiliaSilva />
+        <Familia  sobrenome='Pereiraaaaa' >
+            <Membro nome='Andre'/>
+            <Membro nome='Mariana'/>
+        </Familia>
+        {/* <Familia  sobrenome='Arruda' >
+            <Membro nome='Bia'/>
+            <Membro nome='Gustavo' />
+        </Familia> */}
     </div>
 , elemento)
